@@ -1,0 +1,16 @@
+<footer class="footer">
+  <div class="container">
+    <div class="logo">MonPortfolio</div>
+
+    <div class="socials">
+      @for (social of socials; track social.nom) {
+      <a [href]="social.url" target="_blank" class="social-link">
+        <span>{{ social.icon }}</span>
+        <span>{{ social.nom }}</span>
+      </a>
+      }
+    </div>
+
+    <p class="copy">© {{ year }} — Fait avec Angular par Timothee Bourlet </p>
+  </div>
+</footer>

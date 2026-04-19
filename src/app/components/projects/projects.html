@@ -1,0 +1,63 @@
+<section class="projects" id="projects">
+  <h2 class="section-title">Projets</h2>
+  <div class="grid">
+    <div class="card" *ngFor="let project of projects">
+      <div class="card-banner" [style.background]="project.gradient"></div>
+      <div class="card-body">
+        <h3>{{ project.titre }}</h3>
+        <p>{{ project.description }}</p>
+        <div class="tags">
+          <span class="tag" *ngFor="let tag of project.tags">{{ tag }}</span>
+        </div>
+        <div class="links">
+          <a [href]="project.github" target="_blank" class="link">
+            GitHub
+          </a>
+
+          @if (project.demo) {
+          <a [href]="project.demo" target="_blank" class="link link-demo">
+            Live Demo
+          </a>
+          } @else if (project.demoImages.length > 0) {
+          <button (click)="openLightbox(project.demoImages)" class="link link-demo">
+            Screenshots
+          </button>
+          }
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+@if (lightboxOpen) {
+<div class="lightbox-overlay" (click)="closeLightbox()">
+  <div class="lightbox-box" (click)="$event.stopPropagation()">
+
+    <button class="lb-close" (click)="closeLightbox()">✕</button>
+
+    <div class="lb-content">
+      <button class="lb-nav" (click)="prev()">‹</button>
+
+      <div class="lb-image-wrapper">
+        <img [src]="lightboxImages[lightboxIndex].src"
+             [alt]="lightboxImages[lightboxIndex].caption" />
+        <p class="lb-caption">{{ lightboxImages[lightboxIndex].caption }}</p>
+      </div>
+
+      <button class="lb-nav" (click)="next()">›</button>
+    </div>
+
+    <div class="lb-dots">
+      @for (img of lightboxImages; track $index) {
+      <span class="dot"
+            [class.active]="$index === lightboxIndex"
+            (click)="lightboxIndex = $index">
+          </span>
+      }
+    </div>
+
+  </div>
+</div>
+}

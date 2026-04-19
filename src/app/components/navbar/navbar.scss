@@ -1,0 +1,117 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(10, 10, 20, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    padding: 16px 24px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #7c6aff;
+  }
+
+  // ─── Burger ───
+  .burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 1001;
+
+    span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    // Croix quand ouvert
+    &.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    &.open span:nth-child(2) {
+      opacity: 0;
+    }
+    &.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+
+  // ─── Liens ───
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #7c6aff;
+      }
+    }
+
+    // ─── Mobile dropdown ───
+    @media (max-width: 768px) {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      margin-top: 12px;
+      background: rgba(10, 10, 20, 0.97);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      overflow: hidden;
+
+      &.open {
+        display: flex;
+      }
+
+      li a {
+        display: block;
+        padding: 14px 20px;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.7);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        transition: background 0.2s, color 0.2s;
+
+        &:hover {
+          background: rgba(124, 106, 255, 0.08);
+          color: #7c6aff;
+        }
+      }
+
+      li:last-child a {
+        border-bottom: none;
+      }
+    }
+  }
+}

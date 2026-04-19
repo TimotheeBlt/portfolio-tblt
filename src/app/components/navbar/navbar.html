@@ -1,0 +1,21 @@
+<nav class="navbar">
+  <div class="logo">Mon Portfolio</div>
+
+  <!-- Menu burger -->
+  <button class="burger" (click)="toggleMenu()" [class.open]="menuOpen">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Liens -->
+  <ul class="nav-links" [class.open]="menuOpen">
+    <li><a href="#hero"       (click)="closeMenu()">Accueil</a></li>
+    <li><a href="#experience" (click)="closeMenu()">Expérience</a></li>
+    <li><a href="#skills"     (click)="closeMenu()">Compétences</a></li>
+    <li><a href="#projects"   (click)="closeMenu()">Projets</a></li>
+    <li><a href="#education"  (click)="closeMenu()">Cursus</a></li>
+    <li><a href="#hobbies"      (click)="closeMenu()">Hobbies</a></li>
+
+  </ul>
+</nav>

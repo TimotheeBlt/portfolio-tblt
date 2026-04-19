@@ -1,0 +1,87 @@
+.skills {
+  padding: 100px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    padding: 80px 40px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, #fff, #7c6aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 30px;
+
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #7c6aff;
+      margin-bottom: 24px;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        margin-bottom: 16px;
+      }
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .skill-tag {
+        padding: 6px 14px;
+        background: rgba(124, 106, 255, 0.1);
+        border: 1px solid rgba(124, 106, 255, 0.3);
+        border-radius: 50px;
+        font-size: 0.82rem;
+        color: rgba(255, 255, 255, 0.8);
+        transition: all 0.2s;
+
+        &:hover {
+          background: rgba(124, 106, 255, 0.2);
+          color: #fff;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 0.78rem;
+          padding: 5px 12px;
+        }
+      }
+    }
+  }
+}

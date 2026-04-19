@@ -1,0 +1,16 @@
+<section class="education" id="education">
+  <h2 class="section-title">Cursus Scolaire</h2>
+
+  <div class="timeline">
+    <div class="timeline-item" *ngFor="let f of formations">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="header">
+          <h3 *ngIf="f.diplome">{{ f.diplome }}</h3>
+          <span class="periode">{{ f.periode }}</span>
+        </div>
+        <p class="ecole">{{ f.ecole }}</p>
+      </div>
+    </div>
+  </div>
+</section>
