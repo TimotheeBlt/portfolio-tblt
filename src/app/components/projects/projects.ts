@@ -50,8 +50,8 @@ export class ProjectsComponent {
       github: 'https://github.com/',
       demo: '',
       demoImages: [
-        { src: '../../../assets/botDisdorcd/addmatch.png', caption: 'Création de match' },
-        { src: '../../../assets/botDisdorcd/listmatch.png', caption: 'Liste des matchs' },
+        { src: '/assets/botDiscord/addmatch.png', caption: 'Création de match' },
+        { src: '/assets/botDiscord/listmatch.png', caption: 'Liste des matchs' },
       ]
     },
     {

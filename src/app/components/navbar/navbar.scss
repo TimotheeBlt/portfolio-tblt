@@ -20,7 +20,7 @@
   .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #7c6aff;
+    color: #34d399;
   }
 
   // ─── Burger ───
@@ -44,7 +44,6 @@
       transition: all 0.3s ease;
     }
 
-    // Croix quand ouvert
     &.open span:nth-child(1) {
       transform: translateY(7px) rotate(45deg);
     }
@@ -75,7 +74,7 @@
       transition: color 0.3s;
 
       &:hover {
-        color: #7c6aff;
+        color: #34d399;
       }
     }
 
@@ -104,8 +103,8 @@
         transition: background 0.2s, color 0.2s;
 
         &:hover {
-          background: rgba(124, 106, 255, 0.08);
-          color: #7c6aff;
+          background: rgba(52, 211, 153, 0.08);
+          color: #34d399;
         }
       }
 

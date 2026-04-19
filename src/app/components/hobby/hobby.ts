@@ -36,7 +36,7 @@ export class HobbyComponent {
     },
     {
       icon: '🤝',
-      title: 'Association LEO Club',
+      title: 'Associatif',
       description: 'Engagement associatif, bénévolat et projets solidaires.',
       tags: ['Bénévolat', 'Solidarité', 'Association']
     }

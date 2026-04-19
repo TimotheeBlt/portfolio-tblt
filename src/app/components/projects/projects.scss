@@ -15,7 +15,7 @@
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 60px;
-    background: linear-gradient(135deg, #fff, #7c6aff);
+    background: linear-gradient(135deg, #fff, #34d399);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -48,7 +48,7 @@
 
     &:hover {
       transform: translateY(-6px);
-      border-color: rgba(124, 106, 255, 0.4);
+      border-color: rgba(52, 211, 153, 0.4);
     }
 
     .card-banner {
@@ -92,11 +92,11 @@
 
         .tag {
           padding: 4px 12px;
-          background: rgba(124, 106, 255, 0.1);
-          border: 1px solid rgba(124, 106, 255, 0.3);
+          background: rgba(52, 211, 153, 0.1);
+          border: 1px solid rgba(52, 211, 153, 0.3);
           border-radius: 50px;
           font-size: 0.75rem;
-          color: #7c6aff;
+          color: #34d399;
         }
       }
 
@@ -117,19 +117,19 @@
           background: transparent;
 
           &:hover {
-            border-color: #7c6aff;
-            color: #7c6aff;
+            border-color: #34d399;
+            color: #34d399;
           }
         }
 
         .link-demo {
-          background: #7c6aff;
-          border-color: #7c6aff;
+          background: #34d399;
+          border-color: #34d399;
           color: white;
 
           &:hover {
-            background: #6254d4;
-            border-color: #6254d4;
+            background: #28b07d;
+            border-color: #28b07d;
             color: white;
           }
         }
@@ -266,7 +266,7 @@
   transition: all 0.2s;
 
   &.active {
-    background: #7c6aff;
+    background: #34d399;
     transform: scale(1.3);
   }
 }
