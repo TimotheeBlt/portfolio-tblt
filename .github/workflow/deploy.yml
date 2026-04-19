@@ -34,7 +34,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --base-href /portfolio-tblt/
+        run: npm run build -- --base-href /Eportfoliobtl/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
