@@ -20,25 +20,25 @@ export class HobbyComponent {
       icon: '🎲',
       title: 'Jeux de société',
       description: 'Amateur de jeux de stratégie et de plateau.',
-      tags: ['Stratégie', 'Plateau', 'Convivial', 'Jeux de rôle']
+      tags: ['Stratégie', 'Convivial', 'Jeux de rôle']
     },
     {
       icon: '🏉',
       title: 'Rugby',
       description: 'Pratique en club pendant 4 ans, sport de cohésion et de dépassement de soi.',
-      tags: ['Club', '4 ans', 'Équipe']
+      tags: []
     },
     {
       icon: '🤾',
       title: 'Handball',
       description: 'Pratique en club depuis 4 ans, sport collectif et compétitif.',
-      tags: ['Club', '4 ans', 'Compétition']
+      tags: []
     },
     {
       icon: '🤝',
       title: 'Associatif',
       description: 'Engagement associatif, bénévolat et projets solidaires.',
-      tags: ['Bénévolat', 'Solidarité', 'Association']
+      tags: ['Bénévolat', 'Solidarité']
     }
   ];
 }

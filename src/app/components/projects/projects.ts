@@ -43,32 +43,40 @@ export class ProjectsComponent {
       demoImages: [] as { src: string; caption: string }[]
     },
     {
-      titre: 'Bot Discord',
+      titre: 'Application Création Match',
       description: 'Bot JavaScript pour la gestion d\'événements au sein d\'une association.',
       tags: ['JavaScript', 'Discord.js'],
       gradient: 'linear-gradient(135deg, #5865F2, #404EED)',
-      github: 'https://github.com/',
       demo: '',
       demoImages: [
         { src: '/assets/botDiscord/addmatch.png', caption: 'Création de match' },
         { src: '/assets/botDiscord/listmatch.png', caption: 'Liste des matchs' },
       ]
     },
+      {
+        titre: 'App Statistique Jeu',
+        description: 'Recupération de données et de statistiques en jeu via une API disponible en ligne.',
+        tags: ['JavaScript', 'Discord.js'],
+        gradient: 'linear-gradient(135deg, #586777, #777777)',
+        demo: '',
+        demoImages: [
+          { src: '/assets/botDiscord/commandeRBRS.png', caption: 'commande' },
+          { src: '/assets/botDiscord/statRBRS.png', caption: 'statistiques joueur' },
+        ]
+      },
     {
       titre: 'Serveur Ubuntu + Docker',
       description: 'Mise en place d\'un serveur Ubuntu personnel avec déploiement de différents projets via Docker.',
-      tags: ['Ubuntu', 'Docker', 'Linux'],
+      tags: ['Ubuntu', 'Docker', 'Linux', 'Nginx'],
       gradient: 'linear-gradient(135deg, #f7971e, #ffd200)',
-      github: 'https://github.com/',
       demo: '',
       demoImages: []
     },
     {
       titre: 'Application Interne',
       description: 'Développement d\'une appli interne avec front Angular et API REST Java. Déploiement via Gitlab CI/CD.',
-      tags: ['Angular', 'Java', 'REST', 'Gitlab'],
+      tags: ['Angular', 'Java', 'API REST', 'Gitlab'],
       gradient: 'linear-gradient(135deg, #11998e, #38ef7d)',
-      github: 'https://github.com/',
       demo: '',
       demoImages: []
     }

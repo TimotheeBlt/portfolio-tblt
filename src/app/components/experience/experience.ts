@@ -15,7 +15,7 @@ export class ExperienceComponent {
       entreprise: 'Logic@l Conseils',
       periode: 'Novembre 2024 - Avril 2025',
       description: 'Développement d\'applications interne.',
-      tags: ['Angular', 'Java', 'Spring Boot', 'PostgreSQL']
+      tags: ['Angular', 'Java', 'Spring Boot', 'PostgreSQL', 'GitLab CI/CD']
     },
     {
       poste: 'Développeur Full Stack',

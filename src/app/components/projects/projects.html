@@ -10,9 +10,11 @@
           <span class="tag" *ngFor="let tag of project.tags">{{ tag }}</span>
         </div>
         <div class="links">
+          @if (project.github){
           <a [href]="project.github" target="_blank" class="link">
             GitHub
           </a>
+          }
 
           @if (project.demo) {
           <a [href]="project.demo" target="_blank" class="link link-demo">
